@@ -17,7 +17,7 @@ namespace PruebaConexion
             SqlCommand Comando = new SqlCommand("InsertarCategoria", Miconexion);
             Comando.CommandType = CommandType.StoredProcedure;
             Comando.Parameters.Add("@id", SqlDbType.Int).Value = 17;
-            Comando.Parameters.Add("@nombreCat", SqlDbType.VarChar).Value = "CategoriaD";
+            Comando.Parameters.Add("@nombreCa", SqlDbType.VarChar).Value = "CategoriaD";
             Comando.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = "DescripcionD";
             Comando.ExecuteNonQuery();
             Miconexion.Close();
